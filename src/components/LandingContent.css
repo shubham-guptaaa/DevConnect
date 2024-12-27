@@ -1,0 +1,151 @@
+/* General Layout Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h1 {
+    color: #333;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 1.5rem; /* Slightly larger for readability */
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #4A8DB7; /* Consistent color for subheaders */
+}
+
+/* Section Styling */
+section {
+    padding: 50px 0; /* More generous vertical padding */
+    margin-bottom: 50px; /* Increased spacing between sections */
+    animation: bounceIn 0.8s ease-out;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    color: #4A8DB7;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; /* More spacing for better visual separation */
+    margin-top: 2rem;
+}
+
+/* Code Editor Styling */
+.code-editor {
+    font-family: 'Courier New', monospace;
+    background-color: #1f2937;
+    color: #00FF00;
+    font-size: 1rem;
+    line-height: 1.5; /* Increased for readability */
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.code-editor pre {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.code-editor code {
+    display: block;
+}
+
+/* Card Wrapper */
+.bg-white {
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.bg-white:hover {
+    background-color: #f4f4f4;
+}
+
+/* Shadows for Cards */
+.custom-shadow {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        padding: 16px;
+    }
+}
+
+/* Hover Effects */
+button:hover, .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes bounceIn {
+    0% { opacity: 0; transform: translateY(100px); }
+    60% { opacity: 1; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Padding and Margins */
+.p-6 {
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+/* Text Colors */
+.text-green-400 {
+    color: #38a169;
+}
+
+.text-gray-600 {
+    color: #4a4a4a;
+}
+
+.text-gray-800 {
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
